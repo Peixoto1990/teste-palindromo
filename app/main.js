@@ -6,9 +6,9 @@ function testarPalavraPalindromo(event) { //função declarada
     palavraInvertida = palavraInvertida.join("");
 
     if (palavra == palavraInvertida) {
-        document.querySelector('#resultado').textContent = `A palavra ${palavra} é um palíndromo.`;
+        document.querySelector('#resultado').innerHTML = `A palavra <strong>${palavra}</strong> é um palíndromo.`;
     } else {
-        document.querySelector('#resultado').textContent = `A palavra ${palavra} não é um palíndromo.`;
+        document.querySelector('#resultado').innerHTML = `A palavra <strong>${palavra}</strong> não é um palíndromo.`;
     }
 }
 
